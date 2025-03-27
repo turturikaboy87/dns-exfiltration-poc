@@ -5,10 +5,16 @@ Ovaj PoC demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita kori�
 ## 🧩 Komponente
 
 - **SlanjeFajlaPrekoDNS.ps1**  
-  Enkoduje fajl u Base64, deli na chunkove, šalje ih kao DNS zahteve ka kontrolisanom domenu.
+  Eksfiltraciona skripta:
+- Enkoduje fajl u Base64
+- Deli sadržaj na DNS-validne chunkove (do 63 karaktera)
+- Svaki chunk se šalje kao `Resolve-DnsName` upit ka tvom kontrolisanom domenu (npr. preko Interactsh)
 
 - **RekonstrukcijaFajla.ps1**  
-  Parsira log DNS upita (npr. sa Interactsh), sortira ih po redosledu i dekoduje originalni fajl.
+Dekoderska skripta:
+- Parsira DNS log (kao što je `dns-logovi.txt`)
+- Sortira chunkove po redosledu (`001.`, `002.`, itd.)
+- Sastavlja Base64 string i dekoduje nazad originalni sadržaj
 
 ## 📦 Zahtevi
 
