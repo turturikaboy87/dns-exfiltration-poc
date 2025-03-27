@@ -1,6 +1,6 @@
 # DNS Exfiltration PoC (PowerShell)
 
-Ovaj projekat demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita korišćenjem čistog PowerShell koda. Namenjeno isključivo za edukativne i istraživačke svrhe.
+Ovaj PoC demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita korišćenjem čistog PowerShell koda. Namenjeno isključivo za edukativne i istraživačke svrhe.
 
 ## 🧩 Komponente
 
