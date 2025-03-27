@@ -5,7 +5,7 @@ Ovaj projekat demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita 
 ## 🧩 Komponente
 
 - **SlanjeFajlaPrekoDNS.ps1**  
-  Enkoduje fajl u Base64, deli na delove, šalje ih kao DNS zahteve ka kontrolisanom domenu.
+  Enkoduje fajl u Base64, deli na chunkove, šalje ih kao DNS zahteve ka kontrolisanom domenu.
 
 - **RekonstrukcijaFajla.ps1**  
   Parsira log DNS upita (npr. sa Interactsh), sortira ih po redosledu i dekoduje originalni fajl.
