@@ -7,8 +7,3 @@
 # OS-specific
 .DS_Store
 Thumbs.db
-
-# Optional logs or test outputs
-*.log
-recovered*.txt
-dekoded*.txt
