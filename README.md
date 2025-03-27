@@ -1,11 +1,11 @@
 # DNS Exfiltration PoC (PowerShell)
 
-Ovaj projekat demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita korišćenjem čistog PowerShell koda. Namenjeno isključivo za edukativne i istraživačke svrhe.
+Ovaj PoC demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita korišćenjem čistog PowerShell koda. Namenjeno isključivo za edukativne i istraživačke svrhe.
 
 ## 🧩 Komponente
 
 - **SlanjeFajlaPrekoDNS.ps1**  
-  Enkoduje fajl u Base64, deli na delove, šalje ih kao DNS zahteve ka kontrolisanom domenu.
+  Enkoduje fajl u Base64, deli na chunkove, šalje ih kao DNS zahteve ka kontrolisanom domenu.
 
 - **RekonstrukcijaFajla.ps1**  
   Parsira log DNS upita (npr. sa Interactsh), sortira ih po redosledu i dekoduje originalni fajl.
