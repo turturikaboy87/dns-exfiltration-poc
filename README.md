@@ -51,3 +51,9 @@ Ovaj projekat demonstrira kako se fajl može tiho eksfiltrirati putem DNS upita 
 **Upoređen rezultat:**
 
 ![Poređenje](screenshots/poredjenje-fajlova.PNG)
+
+## 📬 Kontakt
+
+Autor: [@turturikaboy87](https://github.com/turturikaboy87)
+
+Ako koristiš ili modifikuješ ovaj alat, slobodno me taguj – rado ću videti tvoju verziju!
